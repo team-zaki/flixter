@@ -1,5 +1,8 @@
 # README
 
+
+The Flixter web application is a two-sided video-streaming marketplace, featuring credit card payment capabilities, user role management, advanced UI and UX, and advanced database relationships, which is similar to other platforms like Udemy.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
