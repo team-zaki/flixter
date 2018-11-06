@@ -66,3 +66,6 @@ source 'https://rails-assets.org' do
 end
 
 gem 'simple_form'
+
+# Devise is a flexible authentication solution. It supports multiple models signed in at the same time. 
+gem 'devise'
