@@ -1,4 +1,3 @@
-# Since we have two kinds of users (instructors and students) we need a separate controller for each
 class Instructor::CoursesController < ApplicationController
   before_action :authenticate_user!
 
