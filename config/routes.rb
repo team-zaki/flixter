@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   # allows courses to be stored in database. Students need to view all the courses available on our web app
   resources :courses, only: [:index, :show]
+  resources :lessons, only: [:show]
   # Connect instructor controller in config/routes.rb to 'instructor namespace' course controller
   namespace :instructor do
     resources :sections, only: [] do
