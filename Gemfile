@@ -78,3 +78,5 @@ gem "fog-aws"
 
 ## Figaro was written to make it easy to securely configure Rails applications.
 gem "figaro"
+
+gem "mini_magick"
