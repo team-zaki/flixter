@@ -69,3 +69,12 @@ gem 'simple_form'
 
 # Devise is a flexible authentication solution. It supports multiple models signed in at the same time. 
 gem 'devise'
+
+## This gem provides a simple and extremely flexible way to upload photo files for Ruby applications.
+gem "carrierwave", '~> 1.0'
+
+## Fog Gem
+gem "fog-aws"
+
+## Figaro was written to make it easy to securely configure Rails applications.
+gem "figaro"
