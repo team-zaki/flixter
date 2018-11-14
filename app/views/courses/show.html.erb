@@ -1,9 +1,9 @@
 <br />
 
-<div class="booyah-box col-10 offset-1">
+<div class="booyah-box col-10 offset-1 text-center">
   <h1><%= @course.title %></h1>
   <%= image_tag @course.image, class: 'img-responsive courseimg' %>
-  <br />
+  <br /><br />
   <div class="row">
     <div class="col-sm-4 col-12 text-center">
       <span class="badge badge-default">
@@ -23,17 +23,26 @@
 
   <div class="col-12">
     <% @course.sections.each do |section| %>
+      <br /><br />
       <div class="section">
-        <%= section.title %>
-        <% section.lessons.each do |lesson| %>
-          <div class="lesson">
-            <%= link_to lesson_path(lesson) do %>
-              <b><%= lesson.title %></b>
-              -
-              <%= lesson.subtitle %>
-            <% end %>
-          </div>
-        <% end %>
+        <h3>
+          <%= section.title %>
+        </h3>
+        <div class="row">
+          <% section.lessons.each do |lesson| %>
+            <div class="col-12 col-sm-6">
+              <div class="lesson text-center">
+                <br />
+                <%= link_to lesson_path(lesson) do %>
+                  <b><%= lesson.title %></b>
+                  <br />
+                  <%= lesson.subtitle %>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+        <br class="clr" />
       </div>
     <% end %>
   </div>
