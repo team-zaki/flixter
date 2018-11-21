@@ -84,3 +84,6 @@ gem "mini_magick"
 gem 'carrierwave-aws'
 
 gem 'stripe'
+
+# ranked-model is a modern row sorting library built for Rails 3, 4 and 5. It uses ARel aggressively and is better optimized than most other libraries.
+gem 'ranked-model'
