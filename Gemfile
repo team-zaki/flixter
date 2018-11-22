@@ -87,3 +87,6 @@ gem 'stripe'
 
 # ranked-model is a modern row sorting library built for Rails 3, 4 and 5. It uses ARel aggressively and is better optimized than most other libraries.
 gem 'ranked-model'
+
+# This gem packages the jQuery UI assets (JavaScripts, stylesheets, and images) for the Rails asset pipeline, so you never have to download a custom package through the web interface again.
+gem 'jquery-ui-rails'

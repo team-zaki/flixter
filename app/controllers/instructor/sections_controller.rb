@@ -1,6 +1,7 @@
 class Instructor::SectionsController < ApplicationController
   before_action :authenticate_user!
-  before_action :require_authorized_for_current_course
+  before_action :require_authorized_for_current_course, only: [:create]
+  before_action :require_authorized_for_current_section, only: [:update]
 
   def new
     @section = Section.new
@@ -12,6 +13,10 @@ class Instructor::SectionsController < ApplicationController
   end
 
   private
+
+  def current_section
+    @section ||= Section.find(params[:id])
+  end
 
   def require_authorized_for_current_course
     if current_course.user != current_user

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :lessons, only: [:show]
   # Connect instructor controller in config/routes.rb to 'instructor namespace' course controller
   namespace :instructor do
+    resources :lessons, only: [:update]
     resources :sections, only: [] do
       resources :lessons, only: [:new, :create]      
     end
