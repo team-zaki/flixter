@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resource :dashboard, only: [:show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#index'
+  get 'privacy', to: 'static_pages#privacy'
   # allows courses to be stored in database. Students need to view all the courses available on our web app
   resources :courses, only: [:index, :show] do
     resources :enrollments, only: :create
